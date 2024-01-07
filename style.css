@@ -1,0 +1,288 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #fff;
+  color: #0b4152;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background: #ededed;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+  ;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.nav-toggle {
+  font-size: 33px;
+  color: #117787;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointor;
+}
+
+.nav-toggle:hover {
+  color: #0b4152;
+  transform: rotate(90deg);
+
+}
+
+.logo {
+  height: 40px;
+}
+
+.links a {
+  color: grey;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  display: block;
+  padding: .5rem 1rem;
+  transition: all 0.3s linear;
+}
+
+.links a:hover {
+  background: #6bc6d4;
+  color: #30abee;
+  ;
+  padding-left: 1.5rem;
+}
+
+.social-icons {
+  display: none;
+}
+
+.links {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+
+}
+
+.show-links {
+  height: 10rem;
+}
+
+/* Main item for mobile view */
+@media (max-width:850px) {
+  .hero {
+    flex-direction: column;
+    display: flex;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    background-image: url("cartoonBg.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  .headings {
+    width: auto;
+    text-align: center;
+  }
+
+  .headings .title {
+    background: linear-gradient(45deg, #4c0854, #e43f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: linear-gradient(90deg, rgba(231,60,69,1) 0%, rgba(121,9,115,1) 35%, rgba(128,0,255,1) 100%); */
+  }
+
+  .btn {
+    padding: 5px 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: none;
+  }
+
+  .common-btn {
+    background: linear-gradient(45deg, #dc40ee, #b51313);
+    color: #fff;
+    border: 1px solid #50013f;
+    transition: all 0.3s;
+  }
+
+  .common-btn:hover {
+    background: linear-gradient(-45deg, #e60cfe, #df0c0c);
+    /* font-weight: 600; */
+    border: 1px solid #120307;
+    outline: none;
+  }
+
+  .ghost-btn {
+    background-color: #fff;
+
+    border: 1px solid #000000;
+    outline: none;
+  }
+
+  .ghost-btn:hover {
+    background-color: #bc10cf;
+    color: #fff;
+    transition: all 0.25s;
+    border: 2px solid #010505;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .nav-header {
+    padding: 0;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .links {
+    height: auto;
+    display: flex;
+  }
+
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+  }
+
+  .social-icons {
+    display: flex;
+  }
+
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: #24aaf2;
+    ;
+    transition: all 0.3s linear;
+  }
+
+  .social-icons a:hover {
+    color: #0077B5;
+    ;
+
+  }
+
+  /* Main Hero Section Styles */
+
+  .hero {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .hero .intro {
+    /* text-align: center;  */
+    width: 50%;
+    margin: auto 5rem;
+  }
+
+  .hero .intro-buttons {
+    width: 50%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    justify-content: space-evenly;
+  }
+
+  .image-container {
+    width: 50%;
+    background-image: url("cartoonBg.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    margin-left: 5rem;
+  }
+
+  .headings {
+    font-size: 2rem;
+  }
+
+  .headings .title {
+    background: linear-gradient(45deg, #4c0854, #e43f3f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border: none;
+  }
+
+  .common-btn {
+    background: linear-gradient(45deg, #dc40ee, #b51313);
+    color: #fff;
+    border: 2px solid #50013f;
+    transition: all 0.3s;
+  }
+
+  .common-btn:hover {
+    background: linear-gradient(-45deg, #e60cfe, #df0c0c);
+    font-weight: 600;
+    border: 2px solid #120307;
+    outline: none;
+  }
+
+  .ghost-btn {
+    background-color: #fff;
+
+    border: 2px solid #000000;
+    outline: none;
+  }
+
+  .ghost-btn:hover {
+    background-color: #bc10cf;
+    color: #fff;
+    transition: all 0.25s;
+    border: 2px solid #010505;
+  }
+
+}
