@@ -16,9 +16,7 @@ Visit the live version of the portfolio [here](https://portfolio-pradyumn.netlif
 
 ## Projects Included
 
-- [Project 1 Name](#) - Brief description or one-liner.
-- [Project 2 Name](#) - Brief description or one-liner.
-- [Project 3 Name](#) - Brief description or one-liner.
+During the #60DaysChallenge, I dedicated myself to honing my web development skills. This portfolio represents the culmination of that journey, showcasing a selection of projects completed during the challenge. I've integrated a few standout projects from the #60DaysChallenge into this portfolio, demonstrating the progress and skills acquired throughout the intensive learning period.
 
 Feel free to explore each project in the live portfolio.
 
